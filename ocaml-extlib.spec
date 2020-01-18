@@ -3,7 +3,7 @@
 
 Name:           ocaml-extlib
 Version:        1.5.3
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        OCaml ExtLib additions to the standard library
 
 License:        LGPLv2+ with exceptions
@@ -100,6 +100,9 @@ mv $extlibdir/extlib-doc .
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.5.3-4
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.3-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
