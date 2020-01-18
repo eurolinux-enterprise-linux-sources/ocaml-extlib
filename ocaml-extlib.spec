@@ -3,7 +3,7 @@
 
 Name:           ocaml-extlib
 Version:        1.5.3
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        OCaml ExtLib additions to the standard library
 
 License:        LGPLv2+ with exceptions
@@ -100,6 +100,9 @@ mv $extlibdir/extlib-doc .
 
 
 %changelog
+* Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.5.3-5
+- Resolves: rhbz#1125625
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.5.3-4
 - Mass rebuild 2013-12-27
 
