@@ -3,14 +3,13 @@
 
 Name:           ocaml-extlib
 Version:        1.5.3
-Release:        5%{?dist}
+Release:        7%{?dist}
 Summary:        OCaml ExtLib additions to the standard library
 
 License:        LGPLv2+ with exceptions
 URL:            http://code.google.com/p/ocaml-extlib/
 Source0:        http://ocaml-extlib.googlecode.com/files/extlib-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-ExcludeArch:    sparc64 s390 s390x
 
 Patch0:         extlib-install.patch
 
@@ -100,6 +99,14 @@ mv $extlibdir/extlib-doc .
 
 
 %changelog
+* Sat Sep 23 2017 Richard W.M. Jones <rjones@redhat.com> - 1.5.3-7
+- Remove ExcludeArch and build on s390x.
+  related: rhbz#1447990
+
+* Fri Sep 22 2017 Richard W.M. Jones <rjones@redhat.com> - 1.5.3-6
+- Rebuild for OCaml 4.05
+  resolves: rhbz#1447990
+
 * Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.5.3-5
 - Resolves: rhbz#1125625
 
